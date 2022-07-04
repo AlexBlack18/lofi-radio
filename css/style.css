@@ -1,0 +1,125 @@
+body {
+    background-color: antiquewhite;
+	position: relative;
+	max-width: 1170px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.home {
+	position: absolute;
+	top: 3px;
+	right: 20px;
+}
+.home_main {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+}
+h1 {
+    text-align: center;
+	position: relative;
+	top: 60px;
+}
+.logo {
+	position: fixed;
+	top: 20px;
+}
+.pages {
+	position: fixed;
+	bottom: 50%;
+    left: 50%;
+    margin-left: -200px;
+}
+.navig {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.btn {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 46px;
+	line-height: 46px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+.btn:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.buttons {
+	position: fixed;
+	margin: 0 auto 20px auto;
+	padding: 20px;
+	float: left;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -120px;
+}
+.buttons:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(238, 238, 238, 0);
+	border-top-color: #eee;
+}
+.button {
+	padding: 10px 20px;
+	font-weight: bold;
+	letter-spacing: 5px;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	background-color: #7F8C8D;
+	border: none;
+	border-radius: 4px;
+   
+}
+#play-button {
+	background-color: #2ECC71;
+}
+#play-button:hover {
+	background-color: #27AE60;
+}
+#stop-button {
+	background-color: #E74C3C;
+}
+#stop-button:hover {
+	background-color: #C0392B;
+}
+#pause-button,
+#stop-button {
+	margin-left: 15px;
+}
+iframe {
+	display: none;
+}
+@media (max-width: 600px) {
+	.pages {
+		position: fixed;
+		bottom: 50%;
+		left: 50%;
+		margin-left: -100px;
+	}
+}
